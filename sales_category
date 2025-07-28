@@ -1,0 +1,12 @@
+SELECT 
+ date_date 
+ , turnover
+ , ROUND(SUM(turnover),2) as total_turnover
+ , purchase_cost
+ , category_1
+
+FROM gwz_sales_team_project
+
+GROUP BY date_date, turnover, purchase_cost , category_1
+
+ORDER BY date_date ASC
